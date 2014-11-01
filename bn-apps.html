@@ -1,0 +1,40 @@
+<head>
+  <title>bn-apps</title>
+</head>
+
+<body>
+	<p>
+		{{> loginButtons}}
+	</p>
+
+	<p>
+	{{#if currentUser}}
+		Characters:
+		<ul>
+			{{#each toons}}
+				{{> toon}}
+			{{/each}}
+		</ul>
+		<form class="new-toon">
+			<input type="text" name="text" placeholder="Type to add a new toon" />
+		</form>
+	{{/if}}
+	</p>
+
+</body>
+
+<template name="toon">
+	<li>
+    <span class="text">{{toon}}</span>
+  </li>
+
+<!--  <li class="{{#if checked}}checked{{/if}}">
+    <button class="delete">&times;</button>
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+
+    <span class="text">{{toon}}</span>
+  </li>
+-->
+</template>
+
