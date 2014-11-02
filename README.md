@@ -4,7 +4,7 @@ BNApps
 Brave Newbies Archeage guild apps
 
 Install nodejs & npm using your preferred method.
-        On Mint 16+ I had to create a symlink in /usr/bin/node -> nodejs.
+        On Mint 16+ (after installing with apt) I had to create a symlink in /usr/bin/: node -> nodejs.
         Some scripts expect the exec to be named "node".
 
 Get Meteor:
